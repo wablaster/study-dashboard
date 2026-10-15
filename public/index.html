@@ -1,0 +1,62 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The Trading Study: tuning an engine, honestly</title>
+<meta name="description" content="A small research project that fine-tunes a trading method on past prices before any real money is at risk.">
+<meta name="robots" content="noindex">
+<style>
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#f7f3ec;color:#1f2328;font:400 clamp(1.0625rem,1rem + .3vw,1.1875rem)/1.65 Georgia,"Times New Roman",serif}
+main{max-width:36rem;margin:0 auto;padding:3rem max(1.25rem,env(safe-area-inset-left)) 4rem max(1.25rem,env(safe-area-inset-right))}
+h1,h2{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.2;text-wrap:balance;color:#14213d}
+h1{font-size:clamp(1.85rem,1.5rem + 1.6vw,2.6rem);margin:0 0 1rem}
+h2{font-size:clamp(1.3rem,1.15rem + .7vw,1.6rem);margin:3rem 0 .75rem}
+p{margin:0 0 1em;text-wrap:pretty}
+.lead{font-size:1.15em;color:#3a3f45}
+.story{border-top:1px solid #d9cfbf;border-bottom:1px solid #d9cfbf;padding:1.25rem 0;margin:2rem 0;font-style:italic;color:#3a3f45}
+.fig{background:#fff;border:1px solid #e3d9c8;border-radius:12px;padding:1.25rem;margin:1.25rem 0}
+.fig b.n{display:block;font-family:system-ui,sans-serif;font-size:1.9rem;color:#9a3412;line-height:1.2}
+.fig small{display:block;color:#555b62;font-size:.88em;line-height:1.5;margin-top:.5rem}
+.tag{display:inline-block;font:600 .8rem/1 system-ui,sans-serif;letter-spacing:.04em;background:#14213d;color:#fff;padding:.4rem .6rem;border-radius:6px;margin-bottom:.6rem}
+.tag.ill{background:#9a3412}
+table{width:100%;border-collapse:collapse;font-family:system-ui,sans-serif;font-size:.95rem}
+td,th{padding:.55rem .25rem;border-bottom:1px solid #eee3d3;text-align:left}td:last-child,th:last-child{text-align:right}
+.note{font-size:.92em;color:#555b62}
+footer{margin-top:3rem;font-size:.85em;color:#555b62;border-top:1px solid #d9cfbf;padding-top:1rem}
+</style></head><body><main>
+<h1>Tuning an engine, honestly</h1>
+<p class="lead">A small research project. It takes a trading method that has already shown promise and fine-tunes it, one part at a time, before any real money is at risk.</p>
+
+<div class="story"><p>Warren had spent many evenings watching the same markets, until his eye started seeing the same shapes again and again. One afternoon a computer replayed his way of trading on weeks of recorded prices. The test account more than doubled. The question that followed wasn't "is this exciting?" but "is this real, or did we just get lucky?"</p></div>
+
+<h2>Why we do this</h2>
+<p>We think a good idea deserves an honest test, not hope. Think of a Formula 1 team: the car is already designed and has already run fast laps. The work now is research and development, tuning each part and proving it holds, before it ever races.</p>
+
+<h2>How we work</h2>
+<p><b>Rules first.</b> Every test is written down before it runs and is never changed after seeing the result.</p>
+<p><b>Unseen data decides.</b> Settings are chosen on older prices and then checked on newer prices they've never seen.</p>
+<p><b>No real money yet.</b> Everything happens in simulation or on a demo (practice) account. The method stays private while it's tested.</p>
+
+<h2>What it has shown so far</h2>
+<div class="fig"><span class="tag">SIMULATION ON PAST PRICES · NO MONEY INVOLVED</span>
+<b class="n">$1,000 → $3,130.98</b>
+<p>The account doubled after about 5 days of replayed market time. Along the way it fell as much as 30% below its high point.</p>
+<small>Study run of 13 Oct 2026. One shared test account across three markets, a fixed $20 stake per trade, scored only on the most recent 40% of the recorded prices, which weren't used to pick the settings.</small></div>
+<div class="fig"><span class="tag">SIMULATION ON PAST PRICES · NO MONEY INVOLVED</span>
+<b class="n">$100 → $206.55</b>
+<p>The same test with a small account doubled after about 7 days, with a worst dip of 15.6%.</p>
+<small>Same run and the same unseen window. Many other settings in the same study lost money, which is exactly why the tuning continues.</small></div>
+<p class="note">These are past results from a replay, not live trading. The method is <b>unproven on real money</b>. Testing on a demo (practice) account comes next.</p>
+
+<h2>What that pace would mean from $200</h2>
+<div class="fig"><span class="tag ill">ILLUSTRATION, NOT A PROMISE</span>
+<table><tr><th>If the same pace held</th><th>Balance</th></tr>
+<tr><td>Start</td><td>$200</td></tr>
+<tr><td>After about 5 days (one doubling)</td><td>about $400</td></tr>
+<tr><td>Same growth as the $1,000 test (×3.13)</td><td>about $626</td></tr></table>
+<small>This is arithmetic only: the test's growth applied to $200. Past simulated results don't predict the future. Markets change, and real money can be lost, including all of it.</small></div>
+
+<h2>What comes next</h2>
+<p>Finish the tuning, confirm it once on prices the method has never seen, then run it on a demo account. Real money only after all of that holds.</p>
+
+<footer><p>Updated 15 Oct 2026. Nothing here is financial advice or an offer.</p></footer>
+</main></body></html>
